@@ -1,0 +1,53 @@
+using GhostOfTheLibrary.Characters;
+using UnityEngine;
+
+namespace GhostOfTheLibrary.BehaviourTree
+{
+    public abstract class Node : DebuggableNode
+    {
+        public enum State
+        {
+            Running,
+            Failure,
+            Success
+        }
+
+        [HideInInspector] public State state = State.Running;
+        [HideInInspector] public bool started = false;
+        [HideInInspector] public string guid;
+        [HideInInspector] public Vector2 position;
+        [HideInInspector] public Blackboard blackboard;
+        [HideInInspector] public Ai_Agent agent;
+        [TextArea] public string description;
+
+        public State Update()
+        {
+            if (!started)
+            {
+                OnStart();
+                started = true;
+            }
+
+            state = OnUpdate();
+
+            if (state == State.Failure || state == State.Success)
+            {
+                OnStop();
+                started = false;
+            }
+
+            return state;
+        }
+
+        public virtual Node Clone() => Instantiate(this);
+
+        public virtual void ResetNode()
+        {
+
+        }
+
+        protected abstract void OnStart();
+        protected abstract void OnStop();
+        protected abstract State OnUpdate();
+    }
+}

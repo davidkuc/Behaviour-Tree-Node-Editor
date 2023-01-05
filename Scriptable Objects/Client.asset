@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8147247425891760852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621dd3b1828a60640a86cf4d86d27573, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 1
+  guid: 12f173aa62ca70b4e866702cd4472e7b
+  position: {x: 0, y: 99}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 4786471856616102175}
+--- !u!114 &-7425464243837901722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb8db794f798ff43a158a748efb46bb, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 0
+  guid: cbb9d48428deb7a4da84c9b1f9b34edf
+  position: {x: -198, y: 395}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  duration: 4
+--- !u!114 &-4889324654057225860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3811c7eac1ebec54db1d27b5efdc1b5a, type: 3}
+  m_Name: DespawnNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 0
+  guid: 49f37cd376cf3d14bae31a4039a0d21f
+  position: {x: 400, y: 395}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-2196704189843962432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c922e07ffc1449881f71d6ccae43b, type: 3}
+  m_Name: WaitForBookNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 1
+  state: 0
+  started: 0
+  guid: 210fd024c9f04ce408cbbb65a645522e
+  position: {x: 0, y: 553}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  duration: 5
+--- !u!114 &-2023316820451688553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84b0a89b826d2648ae312bbadb92f00, type: 3}
+  m_Name: MoveToWaypointsNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 1
+  guid: 9db2b4a52265a864ab59c60ca80140c2
+  position: {x: -402, y: 395}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-793776441472465933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a830b1a2d34d94d95a3835d5c8a846, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 1
+  guid: 0697ea5474ffdda4cb7cdb30525a1a1e
+  position: {x: 0, y: -27}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -8147247425891760852}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85208bf9df547e4b80b45816fc2c63f, type: 3}
+  m_Name: Client
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -793776441472465933}
+  treeState: 0
+  nodes:
+  - {fileID: -793776441472465933}
+  - {fileID: -8147247425891760852}
+  - {fileID: 4786471856616102175}
+  - {fileID: -2023316820451688553}
+  - {fileID: 3127896188519930571}
+  - {fileID: -2196704189843962432}
+  - {fileID: -7425464243837901722}
+  - {fileID: 2502313077210656587}
+  - {fileID: -4889324654057225860}
+  blackboard:
+    client: {fileID: 0}
+    waypoints:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    waypointsIndex: 0
+    isTreeResetting: 0
+--- !u!114 &2502313077210656587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375c422d9a2a0804e982f6ec9ab94af9, type: 3}
+  m_Name: IncrementWaypointIndexNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 0
+  guid: a9a1e8ed5579c094a9ea66bcb84464b7
+  position: {x: 191, y: 395}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &3127896188519930571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81b685434018fa44a4045f45311a87d, type: 3}
+  m_Name: DetectCounterTriggerNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 0
+  guid: c0765a2fec4beff4889e67c9e7f57ee6
+  position: {x: 0, y: 395}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -2196704189843962432}
+--- !u!114 &4786471856616102175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d6bf2f889f4594eaad772c63c4a0ff, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  showDebugLogs: 0
+  state: 0
+  started: 1
+  guid: 01f1118a99974274e98dc316f8aecc74
+  position: {x: -0.000044717788, y: 237.93753}
+  blackboard:
+    client: {fileID: 0}
+    waypoints: []
+    waypointsIndex: 0
+    isTreeResetting: 0
+  agent: {fileID: 0}
+  description: 
+  children:
+  - {fileID: -2023316820451688553}
+  - {fileID: -7425464243837901722}
+  - {fileID: 3127896188519930571}
+  - {fileID: 2502313077210656587}
+  - {fileID: -4889324654057225860}

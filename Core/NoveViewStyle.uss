@@ -1,0 +1,157 @@
+#node-border {
+    border-left-color: rgb(17, 17, 17);
+    border-right-color: rgb(17, 17, 17);
+    border-top-color: rgb(17, 17, 17);
+    border-bottom-color: rgb(17, 17, 17);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#input {
+    align-items: center;
+    min-height: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#output {
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#selection-border {
+    border-left-color: rgb(39, 194, 250);
+    border-right-color: rgb(39, 194, 250);
+    border-top-color: rgb(39, 194, 250);
+    border-bottom-color: rgb(39, 194, 250);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+:hover > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:hover:seclected > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.node {
+    width: 150px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    align-items: center;
+    margin-bottom: 10px;
+    -unity-font-style: bold;
+}
+
+#description {
+    align-items: center;
+    -unity-text-align: upper-center;
+    font-size: 10px;
+    white-space: normal;
+    max-width: 150px;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgb(140, 140, 140);
+}
+
+.action #input {
+    background-color: rgb(87, 167, 115);
+}
+
+.composite #input {
+    background-color: rgb(253, 231, 76);
+}
+
+.decorator #input {
+    background-color: rgb(184, 184, 243);
+}
+
+.root #input {
+    min-height: 20px;
+    background-color: rgb(238, 99, 82);
+}
+
+#node-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(226, 39, 39, 255);
+}
+
+.running #node-state {
+    background-color: rgba(204, 190, 30, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.failure #node-state {
+    background-color: rgba(233, 28, 28, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.success #node-state {
+    background-color: rgba(35, 212, 37, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
